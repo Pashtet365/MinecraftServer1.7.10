@@ -1,0 +1,286 @@
+[22:40:11] [Server thread/INFO]: Starting minecraft server version 1.7.10
+[22:40:11] [Server thread/INFO]: Loading properties
+[22:40:11] [Server thread/INFO]: Default game type: SURVIVAL
+[22:40:11] [Server thread/INFO]: This server is running CraftBukkit version git-Spigot-1.7.9-R0.2-208-ge0f2e95 (MC: 1.7.10) (Implementing API version 1.7.10-R0.1-SNAPSHOT)
+[22:40:11] [Server thread/INFO]: Debug logging is disabled
+[22:40:11] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[22:40:11] [Server thread/INFO]: Using 4 threads for Netty based IO
+[22:40:11] [Server thread/INFO]: Generating keypair
+[22:40:11] [Server thread/INFO]: Starting Minecraft server on *:25565
+[22:40:11] [Server thread/INFO]: Set PluginClassLoader as parallel capable
+[22:40:11] [Server thread/ERROR]: Could not load 'plugins\Chunky-1.3.38.jar' in folder 'plugins'
+org.bukkit.plugin.InvalidPluginException: java.lang.UnsupportedClassVersionError: org/popcraft/chunky/ChunkyBukkit has been compiled by a more recent version of the Java Runtime (class file version 61.0), this version of the Java Runtime only recognizes class file versions up to 52.0
+	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:133) ~[server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
+	at org.bukkit.plugin.SimplePluginManager.loadPlugin(SimplePluginManager.java:336) ~[server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
+	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:258) [server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
+	at org.bukkit.craftbukkit.v1_7_R4.CraftServer.loadPlugins(CraftServer.java:369) [server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
+	at net.minecraft.server.v1_7_R4.DedicatedServer.init(DedicatedServer.java:152) [server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
+	at net.minecraft.server.v1_7_R4.MinecraftServer.run(MinecraftServer.java:458) [server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
+	at net.minecraft.server.v1_7_R4.ThreadServerApplication.run(SourceFile:628) [server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
+Caused by: java.lang.UnsupportedClassVersionError: org/popcraft/chunky/ChunkyBukkit has been compiled by a more recent version of the Java Runtime (class file version 61.0), this version of the Java Runtime only recognizes class file versions up to 52.0
+	at java.lang.ClassLoader.defineClass1(Native Method) ~[?:1.8.0_60]
+	at java.lang.ClassLoader.defineClass(Unknown Source) ~[?:1.8.0_60]
+	at java.security.SecureClassLoader.defineClass(Unknown Source) ~[?:1.8.0_60]
+	at java.net.URLClassLoader.defineClass(Unknown Source) ~[?:1.8.0_60]
+	at java.net.URLClassLoader.access$100(Unknown Source) ~[?:1.8.0_60]
+	at java.net.URLClassLoader$1.run(Unknown Source) ~[?:1.8.0_60]
+	at java.net.URLClassLoader$1.run(Unknown Source) ~[?:1.8.0_60]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_60]
+	at java.net.URLClassLoader.findClass(Unknown Source) ~[?:1.8.0_60]
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:101) ~[server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:86) ~[server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_60]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_60]
+	at java.lang.Class.forName0(Native Method) ~[?:1.8.0_60]
+	at java.lang.Class.forName(Unknown Source) ~[?:1.8.0_60]
+	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:64) ~[server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
+	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:129) ~[server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
+	... 6 more
+[22:40:11] [Server thread/ERROR]: Could not load 'plugins\Logger-Shaded-1.8.0.1.jar' in folder 'plugins'
+org.bukkit.plugin.InvalidPluginException: java.lang.IllegalArgumentException: No enum constant me.prism3.logger.utils.enums.NmsVersions.v1_7_R4
+	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:133) ~[server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
+	at org.bukkit.plugin.SimplePluginManager.loadPlugin(SimplePluginManager.java:336) ~[server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
+	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:258) [server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
+	at org.bukkit.craftbukkit.v1_7_R4.CraftServer.loadPlugins(CraftServer.java:369) [server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
+	at net.minecraft.server.v1_7_R4.DedicatedServer.init(DedicatedServer.java:152) [server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
+	at net.minecraft.server.v1_7_R4.MinecraftServer.run(MinecraftServer.java:458) [server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
+	at net.minecraft.server.v1_7_R4.ThreadServerApplication.run(SourceFile:628) [server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
+Caused by: java.lang.IllegalArgumentException: No enum constant me.prism3.logger.utils.enums.NmsVersions.v1_7_R4
+	at java.lang.Enum.valueOf(Unknown Source) ~[?:1.8.0_60]
+	at me.prism3.logger.utils.enums.NmsVersions.valueOf(NmsVersions.java:3) ~[?:?]
+	at me.prism3.logger.Main.<init>(Main.java:48) ~[?:?]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_60]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) ~[?:1.8.0_60]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) ~[?:1.8.0_60]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) ~[?:1.8.0_60]
+	at java.lang.Class.newInstance(Unknown Source) ~[?:1.8.0_60]
+	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:76) ~[server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
+	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:129) ~[server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
+	... 6 more
+[22:40:11] [Server thread/ERROR]: Could not load 'plugins\BungeeTabListPlus-3.5.2.jar' in folder 'plugins'
+org.bukkit.plugin.InvalidPluginException: java.lang.NoClassDefFoundError: net/md_5/bungee/api/plugin/Plugin
+	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:133) ~[server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
+	at org.bukkit.plugin.SimplePluginManager.loadPlugin(SimplePluginManager.java:336) ~[server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
+	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:258) [server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
+	at org.bukkit.craftbukkit.v1_7_R4.CraftServer.loadPlugins(CraftServer.java:369) [server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
+	at net.minecraft.server.v1_7_R4.DedicatedServer.init(DedicatedServer.java:152) [server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
+	at net.minecraft.server.v1_7_R4.MinecraftServer.run(MinecraftServer.java:458) [server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
+	at net.minecraft.server.v1_7_R4.ThreadServerApplication.run(SourceFile:628) [server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
+Caused by: java.lang.NoClassDefFoundError: net/md_5/bungee/api/plugin/Plugin
+	at java.lang.ClassLoader.defineClass1(Native Method) ~[?:1.8.0_60]
+	at java.lang.ClassLoader.defineClass(Unknown Source) ~[?:1.8.0_60]
+	at java.security.SecureClassLoader.defineClass(Unknown Source) ~[?:1.8.0_60]
+	at java.net.URLClassLoader.defineClass(Unknown Source) ~[?:1.8.0_60]
+	at java.net.URLClassLoader.access$100(Unknown Source) ~[?:1.8.0_60]
+	at java.net.URLClassLoader$1.run(Unknown Source) ~[?:1.8.0_60]
+	at java.net.URLClassLoader$1.run(Unknown Source) ~[?:1.8.0_60]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_60]
+	at java.net.URLClassLoader.findClass(Unknown Source) ~[?:1.8.0_60]
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:101) ~[server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:86) ~[server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_60]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_60]
+	at java.lang.Class.forName0(Native Method) ~[?:1.8.0_60]
+	at java.lang.Class.forName(Unknown Source) ~[?:1.8.0_60]
+	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:64) ~[server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
+	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:129) ~[server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
+	... 6 more
+Caused by: java.lang.ClassNotFoundException: net.md_5.bungee.api.plugin.Plugin
+	at java.net.URLClassLoader.findClass(Unknown Source) ~[?:1.8.0_60]
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:101) ~[server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:86) ~[server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_60]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_60]
+	at java.lang.ClassLoader.defineClass1(Native Method) ~[?:1.8.0_60]
+	at java.lang.ClassLoader.defineClass(Unknown Source) ~[?:1.8.0_60]
+	at java.security.SecureClassLoader.defineClass(Unknown Source) ~[?:1.8.0_60]
+	at java.net.URLClassLoader.defineClass(Unknown Source) ~[?:1.8.0_60]
+	at java.net.URLClassLoader.access$100(Unknown Source) ~[?:1.8.0_60]
+	at java.net.URLClassLoader$1.run(Unknown Source) ~[?:1.8.0_60]
+	at java.net.URLClassLoader$1.run(Unknown Source) ~[?:1.8.0_60]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_60]
+	at java.net.URLClassLoader.findClass(Unknown Source) ~[?:1.8.0_60]
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:101) ~[server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:86) ~[server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_60]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_60]
+	at java.lang.Class.forName0(Native Method) ~[?:1.8.0_60]
+	at java.lang.Class.forName(Unknown Source) ~[?:1.8.0_60]
+	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:64) ~[server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
+	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:129) ~[server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
+	... 6 more
+[22:40:11] [Server thread/INFO]: [LuckPerms] Loading LuckPerms v5.4.52
+[22:40:12] [Server thread/INFO]: [Essentials] Loading Essentials v2.20.0-dev+16-22a0d53
+[22:40:12] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.4.52
+[22:40:12] [Server thread/INFO]: [0;36;1m       [0;36;22m __    [m
+[22:40:12] [Server thread/INFO]: [0;36;1m  |    [0;36;22m|__)   [0;32;22mLuckPerms[m [0;36;1mv5.4.52[m
+[22:40:12] [Server thread/INFO]: [0;36;1m  |___ [0;36;22m|      [0;30;1mRunning on Bukkit - CraftBukkit[m
+[22:40:12] [Server thread/INFO]: [m
+[22:40:12] [Server thread/INFO]: [LuckPerms] Loading configuration...
+[22:40:12] [Server thread/INFO]: [LuckPerms] Loading storage provider... [H2]
+[22:40:12] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
+[22:40:12] [Server thread/INFO]: [LuckPerms] Performing initial data load...
+[22:40:12] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 759ms)
+[22:40:12] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[22:40:12] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[22:40:12] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[22:40:12] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[22:40:12] [Server thread/INFO]: **** Beginning UUID conversion, this may take A LONG time ****
+[22:40:12] [Server thread/INFO]: Preparing level "world"
+[22:40:12] [Server thread/INFO]: -------- World Settings For [world] --------
+[22:40:12] [Server thread/INFO]: Chunks to Grow per Tick: 650
+[22:40:12] [Server thread/INFO]: Clear tick list: false
+[22:40:12] [Server thread/INFO]: View Distance: 10
+[22:40:12] [Server thread/INFO]: Experience Merge Radius: 3.0
+[22:40:12] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[22:40:12] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[22:40:12] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[22:40:12] [Server thread/INFO]: Item Merge Radius: 2.5
+[22:40:12] [Server thread/INFO]: Item Despawn Rate: 6000
+[22:40:12] [Server thread/INFO]: Max Entity Collisions: 8
+[22:40:12] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617
+[22:40:12] [Server thread/INFO]: Anti X-Ray: true
+[22:40:12] [Server thread/INFO]: 	Engine Mode: 1
+[22:40:12] [Server thread/INFO]: 	Hidden Blocks: [14, 15, 16, 21, 48, 49, 54, 56, 73, 74, 82, 129, 130]
+[22:40:12] [Server thread/INFO]: 	Replace Blocks: [1, 5]
+[22:40:12] [Server thread/INFO]: Mob Spawn Range: 4
+[22:40:12] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[22:40:12] [Server thread/INFO]: Alternative Hopper Ticking: false
+[22:40:12] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 8 Hopper Amount: 1
+[22:40:12] [Server thread/INFO]: Structure Info Saving: true
+[22:40:12] [Server thread/INFO]: Sending up to 5 chunks per packet
+[22:40:12] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[22:40:12] [Server thread/INFO]: Cane Growth Modifier: 100%
+[22:40:12] [Server thread/INFO]: Melon Growth Modifier: 100%
+[22:40:12] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[22:40:12] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[22:40:12] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[22:40:12] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[22:40:12] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16
+[22:40:12] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[22:40:12] [Server thread/INFO]: Max TNT Explosions: 100
+[22:40:12] [Server thread/INFO]: Random Lighting Updates: false
+[22:40:12] [Server thread/INFO]: -------- World Settings For [world_nether] --------
+[22:40:12] [Server thread/INFO]: Chunks to Grow per Tick: 650
+[22:40:12] [Server thread/INFO]: Clear tick list: false
+[22:40:12] [Server thread/INFO]: View Distance: 10
+[22:40:12] [Server thread/INFO]: Experience Merge Radius: 3.0
+[22:40:12] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[22:40:12] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[22:40:12] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[22:40:12] [Server thread/INFO]: Item Merge Radius: 2.5
+[22:40:12] [Server thread/INFO]: Item Despawn Rate: 6000
+[22:40:12] [Server thread/INFO]: Max Entity Collisions: 8
+[22:40:12] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617
+[22:40:12] [Server thread/INFO]: Anti X-Ray: true
+[22:40:12] [Server thread/INFO]: 	Engine Mode: 1
+[22:40:12] [Server thread/INFO]: 	Hidden Blocks: [14, 15, 16, 21, 48, 49, 54, 56, 73, 74, 82, 129, 130]
+[22:40:12] [Server thread/INFO]: 	Replace Blocks: [1, 5]
+[22:40:12] [Server thread/INFO]: Mob Spawn Range: 4
+[22:40:12] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[22:40:12] [Server thread/INFO]: Alternative Hopper Ticking: false
+[22:40:12] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 8 Hopper Amount: 1
+[22:40:12] [Server thread/INFO]: Structure Info Saving: true
+[22:40:12] [Server thread/INFO]: Sending up to 5 chunks per packet
+[22:40:12] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[22:40:12] [Server thread/INFO]: Cane Growth Modifier: 100%
+[22:40:12] [Server thread/INFO]: Melon Growth Modifier: 100%
+[22:40:12] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[22:40:12] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[22:40:12] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[22:40:12] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[22:40:12] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16
+[22:40:12] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[22:40:12] [Server thread/INFO]: Max TNT Explosions: 100
+[22:40:12] [Server thread/INFO]: Random Lighting Updates: false
+[22:40:12] [Server thread/INFO]: -------- World Settings For [world_the_end] --------
+[22:40:12] [Server thread/INFO]: Chunks to Grow per Tick: 650
+[22:40:12] [Server thread/INFO]: Clear tick list: false
+[22:40:12] [Server thread/INFO]: View Distance: 10
+[22:40:12] [Server thread/INFO]: Experience Merge Radius: 3.0
+[22:40:12] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[22:40:12] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[22:40:12] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[22:40:12] [Server thread/INFO]: Item Merge Radius: 2.5
+[22:40:12] [Server thread/INFO]: Item Despawn Rate: 6000
+[22:40:12] [Server thread/INFO]: Max Entity Collisions: 8
+[22:40:12] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617
+[22:40:12] [Server thread/INFO]: Anti X-Ray: true
+[22:40:12] [Server thread/INFO]: 	Engine Mode: 1
+[22:40:12] [Server thread/INFO]: 	Hidden Blocks: [14, 15, 16, 21, 48, 49, 54, 56, 73, 74, 82, 129, 130]
+[22:40:12] [Server thread/INFO]: 	Replace Blocks: [1, 5]
+[22:40:12] [Server thread/INFO]: Mob Spawn Range: 4
+[22:40:12] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[22:40:12] [Server thread/INFO]: Alternative Hopper Ticking: false
+[22:40:12] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 8 Hopper Amount: 1
+[22:40:12] [Server thread/INFO]: Structure Info Saving: true
+[22:40:12] [Server thread/INFO]: Sending up to 5 chunks per packet
+[22:40:12] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[22:40:12] [Server thread/INFO]: Cane Growth Modifier: 100%
+[22:40:12] [Server thread/INFO]: Melon Growth Modifier: 100%
+[22:40:12] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[22:40:12] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[22:40:12] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[22:40:12] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[22:40:12] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16
+[22:40:12] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[22:40:12] [Server thread/INFO]: Max TNT Explosions: 100
+[22:40:12] [Server thread/INFO]: Random Lighting Updates: false
+[22:40:12] [Server thread/INFO]: Preparing start region for level 0 (Seed: -1040945524875363522)
+[22:40:13] [Server thread/INFO]: Preparing start region for level 1 (Seed: -1040945524875363522)
+[22:40:13] [Server thread/INFO]: Preparing start region for level 2 (Seed: -1040945524875363522)
+[22:40:13] [Server thread/INFO]: [Essentials] Enabling Essentials v2.20.0-dev+16-22a0d53
+[22:40:13] [Server thread/ERROR]: You are running an unsupported server version!
+[22:40:13] [Server thread/ERROR]: java.lang.NoSuchFieldError: BARRIER
+[22:40:13] [Server thread/WARN]: java.lang.NoSuchFieldError: BARRIER
+[22:40:13] [Server thread/WARN]: 	at com.earth2me.essentials.utils.LocationUtil.<clinit>(LocationUtil.java:55)
+[22:40:13] [Server thread/WARN]: 	at com.earth2me.essentials.Settings._isWaterSafe(Settings.java:1846)
+[22:40:13] [Server thread/WARN]: 	at com.earth2me.essentials.Settings.reloadConfig(Settings.java:772)
+[22:40:13] [Server thread/WARN]: 	at com.earth2me.essentials.Settings.<init>(Settings.java:143)
+[22:40:13] [Server thread/WARN]: 	at com.earth2me.essentials.Essentials.onEnable(Essentials.java:303)
+[22:40:13] [Server thread/WARN]: 	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:316)
+[22:40:13] [Server thread/WARN]: 	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:332)
+[22:40:13] [Server thread/WARN]: 	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:412)
+[22:40:13] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_7_R4.CraftServer.loadPlugin(CraftServer.java:476)
+[22:40:13] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_7_R4.CraftServer.enablePlugins(CraftServer.java:394)
+[22:40:13] [Server thread/WARN]: 	at net.minecraft.server.v1_7_R4.MinecraftServer.n(MinecraftServer.java:360)
+[22:40:13] [Server thread/WARN]: 	at net.minecraft.server.v1_7_R4.MinecraftServer.g(MinecraftServer.java:334)
+[22:40:13] [Server thread/WARN]: 	at net.minecraft.server.v1_7_R4.MinecraftServer.a(MinecraftServer.java:290)
+[22:40:13] [Server thread/WARN]: 	at net.minecraft.server.v1_7_R4.DedicatedServer.init(DedicatedServer.java:210)
+[22:40:13] [Server thread/WARN]: 	at net.minecraft.server.v1_7_R4.MinecraftServer.run(MinecraftServer.java:458)
+[22:40:13] [Server thread/WARN]: 	at net.minecraft.server.v1_7_R4.ThreadServerApplication.run(SourceFile:628)
+[22:40:13] [Server thread/ERROR]: Error occurred while enabling Essentials v2.20.0-dev+16-22a0d53 (Is it up to date?)
+java.lang.NullPointerException
+	at com.earth2me.essentials.Essentials.onDisable(Essentials.java:561) ~[?:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:318) ~[server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
+	at com.earth2me.essentials.Essentials.handleCrash(Essentials.java:1101) ~[?:?]
+	at com.earth2me.essentials.Essentials.onEnable(Essentials.java:495) ~[?:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:316) ~[server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:332) [server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:412) [server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
+	at org.bukkit.craftbukkit.v1_7_R4.CraftServer.loadPlugin(CraftServer.java:476) [server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
+	at org.bukkit.craftbukkit.v1_7_R4.CraftServer.enablePlugins(CraftServer.java:394) [server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
+	at net.minecraft.server.v1_7_R4.MinecraftServer.n(MinecraftServer.java:360) [server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
+	at net.minecraft.server.v1_7_R4.MinecraftServer.g(MinecraftServer.java:334) [server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
+	at net.minecraft.server.v1_7_R4.MinecraftServer.a(MinecraftServer.java:290) [server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
+	at net.minecraft.server.v1_7_R4.DedicatedServer.init(DedicatedServer.java:210) [server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
+	at net.minecraft.server.v1_7_R4.MinecraftServer.run(MinecraftServer.java:458) [server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
+	at net.minecraft.server.v1_7_R4.ThreadServerApplication.run(SourceFile:628) [server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
+[22:40:13] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[22:40:13] [Server thread/INFO]: Done (1,108s)! For help, type "help" or "?"
+[22:40:53] [User Authenticator #1/INFO]: UUID of player VladClohara is cff2f863-6708-3d8c-a859-2a26fc6fcb71
+[22:40:53] [Server thread/INFO]: VladClohara[/26.142.254.143:64316] logged in with entity id 232 at ([world] 19.5, 71.0, 254.5)
+[22:41:13] [Server thread/INFO]: VladClohara lost connection: Disconnected
+[22:41:13] [Server thread/INFO]: VladClohara left the game.
+[23:17:36] [Server thread/INFO]: CONSOLE: Stopping the server..[m
+[23:17:36] [Server thread/INFO]: Stopping server
+[23:17:36] [Server thread/INFO]: [LuckPerms] Disabling LuckPerms v5.4.52
+[23:17:36] [Server thread/INFO]: [LuckPerms] Starting shutdown process...
+[23:17:36] [Server thread/INFO]: [LuckPerms] Closing storage...
+[23:17:36] [Server thread/INFO]: [LuckPerms] Goodbye!
+[23:17:36] [Server thread/INFO]: Saving players
+[23:17:36] [Server thread/INFO]: Saving worlds
+[23:17:36] [Server thread/INFO]: Saving chunks for level 'world'/Overworld
+[23:17:37] [Server thread/INFO]: Saving chunks for level 'world_nether'/Nether
+[23:17:37] [Server thread/INFO]: Saving chunks for level 'world_the_end'/The End
+[23:17:37] [Thread-4/INFO]: Stopping server
