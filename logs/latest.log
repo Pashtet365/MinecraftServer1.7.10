@@ -1,286 +1,210 @@
-[22:40:11] [Server thread/INFO]: Starting minecraft server version 1.7.10
-[22:40:11] [Server thread/INFO]: Loading properties
-[22:40:11] [Server thread/INFO]: Default game type: SURVIVAL
-[22:40:11] [Server thread/INFO]: This server is running CraftBukkit version git-Spigot-1.7.9-R0.2-208-ge0f2e95 (MC: 1.7.10) (Implementing API version 1.7.10-R0.1-SNAPSHOT)
-[22:40:11] [Server thread/INFO]: Debug logging is disabled
-[22:40:11] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[22:40:11] [Server thread/INFO]: Using 4 threads for Netty based IO
-[22:40:11] [Server thread/INFO]: Generating keypair
-[22:40:11] [Server thread/INFO]: Starting Minecraft server on *:25565
-[22:40:11] [Server thread/INFO]: Set PluginClassLoader as parallel capable
-[22:40:11] [Server thread/ERROR]: Could not load 'plugins\Chunky-1.3.38.jar' in folder 'plugins'
-org.bukkit.plugin.InvalidPluginException: java.lang.UnsupportedClassVersionError: org/popcraft/chunky/ChunkyBukkit has been compiled by a more recent version of the Java Runtime (class file version 61.0), this version of the Java Runtime only recognizes class file versions up to 52.0
-	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:133) ~[server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
-	at org.bukkit.plugin.SimplePluginManager.loadPlugin(SimplePluginManager.java:336) ~[server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
-	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:258) [server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
-	at org.bukkit.craftbukkit.v1_7_R4.CraftServer.loadPlugins(CraftServer.java:369) [server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
-	at net.minecraft.server.v1_7_R4.DedicatedServer.init(DedicatedServer.java:152) [server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
-	at net.minecraft.server.v1_7_R4.MinecraftServer.run(MinecraftServer.java:458) [server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
-	at net.minecraft.server.v1_7_R4.ThreadServerApplication.run(SourceFile:628) [server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
-Caused by: java.lang.UnsupportedClassVersionError: org/popcraft/chunky/ChunkyBukkit has been compiled by a more recent version of the Java Runtime (class file version 61.0), this version of the Java Runtime only recognizes class file versions up to 52.0
-	at java.lang.ClassLoader.defineClass1(Native Method) ~[?:1.8.0_60]
-	at java.lang.ClassLoader.defineClass(Unknown Source) ~[?:1.8.0_60]
-	at java.security.SecureClassLoader.defineClass(Unknown Source) ~[?:1.8.0_60]
-	at java.net.URLClassLoader.defineClass(Unknown Source) ~[?:1.8.0_60]
-	at java.net.URLClassLoader.access$100(Unknown Source) ~[?:1.8.0_60]
-	at java.net.URLClassLoader$1.run(Unknown Source) ~[?:1.8.0_60]
-	at java.net.URLClassLoader$1.run(Unknown Source) ~[?:1.8.0_60]
-	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_60]
-	at java.net.URLClassLoader.findClass(Unknown Source) ~[?:1.8.0_60]
-	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:101) ~[server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
-	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:86) ~[server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
-	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_60]
-	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_60]
-	at java.lang.Class.forName0(Native Method) ~[?:1.8.0_60]
-	at java.lang.Class.forName(Unknown Source) ~[?:1.8.0_60]
-	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:64) ~[server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
-	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:129) ~[server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
-	... 6 more
-[22:40:11] [Server thread/ERROR]: Could not load 'plugins\Logger-Shaded-1.8.0.1.jar' in folder 'plugins'
-org.bukkit.plugin.InvalidPluginException: java.lang.IllegalArgumentException: No enum constant me.prism3.logger.utils.enums.NmsVersions.v1_7_R4
-	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:133) ~[server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
-	at org.bukkit.plugin.SimplePluginManager.loadPlugin(SimplePluginManager.java:336) ~[server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
-	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:258) [server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
-	at org.bukkit.craftbukkit.v1_7_R4.CraftServer.loadPlugins(CraftServer.java:369) [server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
-	at net.minecraft.server.v1_7_R4.DedicatedServer.init(DedicatedServer.java:152) [server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
-	at net.minecraft.server.v1_7_R4.MinecraftServer.run(MinecraftServer.java:458) [server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
-	at net.minecraft.server.v1_7_R4.ThreadServerApplication.run(SourceFile:628) [server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
-Caused by: java.lang.IllegalArgumentException: No enum constant me.prism3.logger.utils.enums.NmsVersions.v1_7_R4
-	at java.lang.Enum.valueOf(Unknown Source) ~[?:1.8.0_60]
-	at me.prism3.logger.utils.enums.NmsVersions.valueOf(NmsVersions.java:3) ~[?:?]
-	at me.prism3.logger.Main.<init>(Main.java:48) ~[?:?]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_60]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) ~[?:1.8.0_60]
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) ~[?:1.8.0_60]
-	at java.lang.reflect.Constructor.newInstance(Unknown Source) ~[?:1.8.0_60]
-	at java.lang.Class.newInstance(Unknown Source) ~[?:1.8.0_60]
-	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:76) ~[server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
-	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:129) ~[server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
-	... 6 more
-[22:40:11] [Server thread/ERROR]: Could not load 'plugins\BungeeTabListPlus-3.5.2.jar' in folder 'plugins'
-org.bukkit.plugin.InvalidPluginException: java.lang.NoClassDefFoundError: net/md_5/bungee/api/plugin/Plugin
-	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:133) ~[server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
-	at org.bukkit.plugin.SimplePluginManager.loadPlugin(SimplePluginManager.java:336) ~[server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
-	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:258) [server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
-	at org.bukkit.craftbukkit.v1_7_R4.CraftServer.loadPlugins(CraftServer.java:369) [server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
-	at net.minecraft.server.v1_7_R4.DedicatedServer.init(DedicatedServer.java:152) [server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
-	at net.minecraft.server.v1_7_R4.MinecraftServer.run(MinecraftServer.java:458) [server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
-	at net.minecraft.server.v1_7_R4.ThreadServerApplication.run(SourceFile:628) [server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
-Caused by: java.lang.NoClassDefFoundError: net/md_5/bungee/api/plugin/Plugin
-	at java.lang.ClassLoader.defineClass1(Native Method) ~[?:1.8.0_60]
-	at java.lang.ClassLoader.defineClass(Unknown Source) ~[?:1.8.0_60]
-	at java.security.SecureClassLoader.defineClass(Unknown Source) ~[?:1.8.0_60]
-	at java.net.URLClassLoader.defineClass(Unknown Source) ~[?:1.8.0_60]
-	at java.net.URLClassLoader.access$100(Unknown Source) ~[?:1.8.0_60]
-	at java.net.URLClassLoader$1.run(Unknown Source) ~[?:1.8.0_60]
-	at java.net.URLClassLoader$1.run(Unknown Source) ~[?:1.8.0_60]
-	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_60]
-	at java.net.URLClassLoader.findClass(Unknown Source) ~[?:1.8.0_60]
-	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:101) ~[server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
-	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:86) ~[server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
-	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_60]
-	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_60]
-	at java.lang.Class.forName0(Native Method) ~[?:1.8.0_60]
-	at java.lang.Class.forName(Unknown Source) ~[?:1.8.0_60]
-	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:64) ~[server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
-	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:129) ~[server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
-	... 6 more
-Caused by: java.lang.ClassNotFoundException: net.md_5.bungee.api.plugin.Plugin
-	at java.net.URLClassLoader.findClass(Unknown Source) ~[?:1.8.0_60]
-	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:101) ~[server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
-	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:86) ~[server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
-	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_60]
-	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_60]
-	at java.lang.ClassLoader.defineClass1(Native Method) ~[?:1.8.0_60]
-	at java.lang.ClassLoader.defineClass(Unknown Source) ~[?:1.8.0_60]
-	at java.security.SecureClassLoader.defineClass(Unknown Source) ~[?:1.8.0_60]
-	at java.net.URLClassLoader.defineClass(Unknown Source) ~[?:1.8.0_60]
-	at java.net.URLClassLoader.access$100(Unknown Source) ~[?:1.8.0_60]
-	at java.net.URLClassLoader$1.run(Unknown Source) ~[?:1.8.0_60]
-	at java.net.URLClassLoader$1.run(Unknown Source) ~[?:1.8.0_60]
-	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_60]
-	at java.net.URLClassLoader.findClass(Unknown Source) ~[?:1.8.0_60]
-	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:101) ~[server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
-	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:86) ~[server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
-	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_60]
-	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_60]
-	at java.lang.Class.forName0(Native Method) ~[?:1.8.0_60]
-	at java.lang.Class.forName(Unknown Source) ~[?:1.8.0_60]
-	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:64) ~[server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
-	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:129) ~[server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
-	... 6 more
-[22:40:11] [Server thread/INFO]: [LuckPerms] Loading LuckPerms v5.4.52
-[22:40:12] [Server thread/INFO]: [Essentials] Loading Essentials v2.20.0-dev+16-22a0d53
-[22:40:12] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.4.52
-[22:40:12] [Server thread/INFO]: [0;36;1m       [0;36;22m __    [m
-[22:40:12] [Server thread/INFO]: [0;36;1m  |    [0;36;22m|__)   [0;32;22mLuckPerms[m [0;36;1mv5.4.52[m
-[22:40:12] [Server thread/INFO]: [0;36;1m  |___ [0;36;22m|      [0;30;1mRunning on Bukkit - CraftBukkit[m
-[22:40:12] [Server thread/INFO]: [m
-[22:40:12] [Server thread/INFO]: [LuckPerms] Loading configuration...
-[22:40:12] [Server thread/INFO]: [LuckPerms] Loading storage provider... [H2]
-[22:40:12] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
-[22:40:12] [Server thread/INFO]: [LuckPerms] Performing initial data load...
-[22:40:12] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 759ms)
-[22:40:12] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[22:40:12] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[22:40:12] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[22:40:12] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[22:40:12] [Server thread/INFO]: **** Beginning UUID conversion, this may take A LONG time ****
-[22:40:12] [Server thread/INFO]: Preparing level "world"
-[22:40:12] [Server thread/INFO]: -------- World Settings For [world] --------
-[22:40:12] [Server thread/INFO]: Chunks to Grow per Tick: 650
-[22:40:12] [Server thread/INFO]: Clear tick list: false
-[22:40:12] [Server thread/INFO]: View Distance: 10
-[22:40:12] [Server thread/INFO]: Experience Merge Radius: 3.0
-[22:40:12] [Server thread/INFO]: Arrow Despawn Rate: 1200
-[22:40:12] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
-[22:40:12] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
-[22:40:12] [Server thread/INFO]: Item Merge Radius: 2.5
-[22:40:12] [Server thread/INFO]: Item Despawn Rate: 6000
-[22:40:12] [Server thread/INFO]: Max Entity Collisions: 8
-[22:40:12] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617
-[22:40:12] [Server thread/INFO]: Anti X-Ray: true
-[22:40:12] [Server thread/INFO]: 	Engine Mode: 1
-[22:40:12] [Server thread/INFO]: 	Hidden Blocks: [14, 15, 16, 21, 48, 49, 54, 56, 73, 74, 82, 129, 130]
-[22:40:12] [Server thread/INFO]: 	Replace Blocks: [1, 5]
-[22:40:12] [Server thread/INFO]: Mob Spawn Range: 4
-[22:40:12] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
-[22:40:12] [Server thread/INFO]: Alternative Hopper Ticking: false
-[22:40:12] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 8 Hopper Amount: 1
-[22:40:12] [Server thread/INFO]: Structure Info Saving: true
-[22:40:12] [Server thread/INFO]: Sending up to 5 chunks per packet
-[22:40:12] [Server thread/INFO]: Cactus Growth Modifier: 100%
-[22:40:12] [Server thread/INFO]: Cane Growth Modifier: 100%
-[22:40:12] [Server thread/INFO]: Melon Growth Modifier: 100%
-[22:40:12] [Server thread/INFO]: Mushroom Growth Modifier: 100%
-[22:40:12] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
-[22:40:12] [Server thread/INFO]: Sapling Growth Modifier: 100%
-[22:40:12] [Server thread/INFO]: Wheat Growth Modifier: 100%
-[22:40:12] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16
-[22:40:12] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
-[22:40:12] [Server thread/INFO]: Max TNT Explosions: 100
-[22:40:12] [Server thread/INFO]: Random Lighting Updates: false
-[22:40:12] [Server thread/INFO]: -------- World Settings For [world_nether] --------
-[22:40:12] [Server thread/INFO]: Chunks to Grow per Tick: 650
-[22:40:12] [Server thread/INFO]: Clear tick list: false
-[22:40:12] [Server thread/INFO]: View Distance: 10
-[22:40:12] [Server thread/INFO]: Experience Merge Radius: 3.0
-[22:40:12] [Server thread/INFO]: Arrow Despawn Rate: 1200
-[22:40:12] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
-[22:40:12] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
-[22:40:12] [Server thread/INFO]: Item Merge Radius: 2.5
-[22:40:12] [Server thread/INFO]: Item Despawn Rate: 6000
-[22:40:12] [Server thread/INFO]: Max Entity Collisions: 8
-[22:40:12] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617
-[22:40:12] [Server thread/INFO]: Anti X-Ray: true
-[22:40:12] [Server thread/INFO]: 	Engine Mode: 1
-[22:40:12] [Server thread/INFO]: 	Hidden Blocks: [14, 15, 16, 21, 48, 49, 54, 56, 73, 74, 82, 129, 130]
-[22:40:12] [Server thread/INFO]: 	Replace Blocks: [1, 5]
-[22:40:12] [Server thread/INFO]: Mob Spawn Range: 4
-[22:40:12] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
-[22:40:12] [Server thread/INFO]: Alternative Hopper Ticking: false
-[22:40:12] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 8 Hopper Amount: 1
-[22:40:12] [Server thread/INFO]: Structure Info Saving: true
-[22:40:12] [Server thread/INFO]: Sending up to 5 chunks per packet
-[22:40:12] [Server thread/INFO]: Cactus Growth Modifier: 100%
-[22:40:12] [Server thread/INFO]: Cane Growth Modifier: 100%
-[22:40:12] [Server thread/INFO]: Melon Growth Modifier: 100%
-[22:40:12] [Server thread/INFO]: Mushroom Growth Modifier: 100%
-[22:40:12] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
-[22:40:12] [Server thread/INFO]: Sapling Growth Modifier: 100%
-[22:40:12] [Server thread/INFO]: Wheat Growth Modifier: 100%
-[22:40:12] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16
-[22:40:12] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
-[22:40:12] [Server thread/INFO]: Max TNT Explosions: 100
-[22:40:12] [Server thread/INFO]: Random Lighting Updates: false
-[22:40:12] [Server thread/INFO]: -------- World Settings For [world_the_end] --------
-[22:40:12] [Server thread/INFO]: Chunks to Grow per Tick: 650
-[22:40:12] [Server thread/INFO]: Clear tick list: false
-[22:40:12] [Server thread/INFO]: View Distance: 10
-[22:40:12] [Server thread/INFO]: Experience Merge Radius: 3.0
-[22:40:12] [Server thread/INFO]: Arrow Despawn Rate: 1200
-[22:40:12] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
-[22:40:12] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
-[22:40:12] [Server thread/INFO]: Item Merge Radius: 2.5
-[22:40:12] [Server thread/INFO]: Item Despawn Rate: 6000
-[22:40:12] [Server thread/INFO]: Max Entity Collisions: 8
-[22:40:12] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617
-[22:40:12] [Server thread/INFO]: Anti X-Ray: true
-[22:40:12] [Server thread/INFO]: 	Engine Mode: 1
-[22:40:12] [Server thread/INFO]: 	Hidden Blocks: [14, 15, 16, 21, 48, 49, 54, 56, 73, 74, 82, 129, 130]
-[22:40:12] [Server thread/INFO]: 	Replace Blocks: [1, 5]
-[22:40:12] [Server thread/INFO]: Mob Spawn Range: 4
-[22:40:12] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
-[22:40:12] [Server thread/INFO]: Alternative Hopper Ticking: false
-[22:40:12] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 8 Hopper Amount: 1
-[22:40:12] [Server thread/INFO]: Structure Info Saving: true
-[22:40:12] [Server thread/INFO]: Sending up to 5 chunks per packet
-[22:40:12] [Server thread/INFO]: Cactus Growth Modifier: 100%
-[22:40:12] [Server thread/INFO]: Cane Growth Modifier: 100%
-[22:40:12] [Server thread/INFO]: Melon Growth Modifier: 100%
-[22:40:12] [Server thread/INFO]: Mushroom Growth Modifier: 100%
-[22:40:12] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
-[22:40:12] [Server thread/INFO]: Sapling Growth Modifier: 100%
-[22:40:12] [Server thread/INFO]: Wheat Growth Modifier: 100%
-[22:40:12] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16
-[22:40:12] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
-[22:40:12] [Server thread/INFO]: Max TNT Explosions: 100
-[22:40:12] [Server thread/INFO]: Random Lighting Updates: false
-[22:40:12] [Server thread/INFO]: Preparing start region for level 0 (Seed: -1040945524875363522)
-[22:40:13] [Server thread/INFO]: Preparing start region for level 1 (Seed: -1040945524875363522)
-[22:40:13] [Server thread/INFO]: Preparing start region for level 2 (Seed: -1040945524875363522)
-[22:40:13] [Server thread/INFO]: [Essentials] Enabling Essentials v2.20.0-dev+16-22a0d53
-[22:40:13] [Server thread/ERROR]: You are running an unsupported server version!
-[22:40:13] [Server thread/ERROR]: java.lang.NoSuchFieldError: BARRIER
-[22:40:13] [Server thread/WARN]: java.lang.NoSuchFieldError: BARRIER
-[22:40:13] [Server thread/WARN]: 	at com.earth2me.essentials.utils.LocationUtil.<clinit>(LocationUtil.java:55)
-[22:40:13] [Server thread/WARN]: 	at com.earth2me.essentials.Settings._isWaterSafe(Settings.java:1846)
-[22:40:13] [Server thread/WARN]: 	at com.earth2me.essentials.Settings.reloadConfig(Settings.java:772)
-[22:40:13] [Server thread/WARN]: 	at com.earth2me.essentials.Settings.<init>(Settings.java:143)
-[22:40:13] [Server thread/WARN]: 	at com.earth2me.essentials.Essentials.onEnable(Essentials.java:303)
-[22:40:13] [Server thread/WARN]: 	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:316)
-[22:40:13] [Server thread/WARN]: 	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:332)
-[22:40:13] [Server thread/WARN]: 	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:412)
-[22:40:13] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_7_R4.CraftServer.loadPlugin(CraftServer.java:476)
-[22:40:13] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_7_R4.CraftServer.enablePlugins(CraftServer.java:394)
-[22:40:13] [Server thread/WARN]: 	at net.minecraft.server.v1_7_R4.MinecraftServer.n(MinecraftServer.java:360)
-[22:40:13] [Server thread/WARN]: 	at net.minecraft.server.v1_7_R4.MinecraftServer.g(MinecraftServer.java:334)
-[22:40:13] [Server thread/WARN]: 	at net.minecraft.server.v1_7_R4.MinecraftServer.a(MinecraftServer.java:290)
-[22:40:13] [Server thread/WARN]: 	at net.minecraft.server.v1_7_R4.DedicatedServer.init(DedicatedServer.java:210)
-[22:40:13] [Server thread/WARN]: 	at net.minecraft.server.v1_7_R4.MinecraftServer.run(MinecraftServer.java:458)
-[22:40:13] [Server thread/WARN]: 	at net.minecraft.server.v1_7_R4.ThreadServerApplication.run(SourceFile:628)
-[22:40:13] [Server thread/ERROR]: Error occurred while enabling Essentials v2.20.0-dev+16-22a0d53 (Is it up to date?)
-java.lang.NullPointerException
-	at com.earth2me.essentials.Essentials.onDisable(Essentials.java:561) ~[?:?]
-	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:318) ~[server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
-	at com.earth2me.essentials.Essentials.handleCrash(Essentials.java:1101) ~[?:?]
-	at com.earth2me.essentials.Essentials.onEnable(Essentials.java:495) ~[?:?]
-	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:316) ~[server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
-	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:332) [server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
-	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:412) [server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
-	at org.bukkit.craftbukkit.v1_7_R4.CraftServer.loadPlugin(CraftServer.java:476) [server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
-	at org.bukkit.craftbukkit.v1_7_R4.CraftServer.enablePlugins(CraftServer.java:394) [server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
-	at net.minecraft.server.v1_7_R4.MinecraftServer.n(MinecraftServer.java:360) [server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
-	at net.minecraft.server.v1_7_R4.MinecraftServer.g(MinecraftServer.java:334) [server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
-	at net.minecraft.server.v1_7_R4.MinecraftServer.a(MinecraftServer.java:290) [server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
-	at net.minecraft.server.v1_7_R4.DedicatedServer.init(DedicatedServer.java:210) [server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
-	at net.minecraft.server.v1_7_R4.MinecraftServer.run(MinecraftServer.java:458) [server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
-	at net.minecraft.server.v1_7_R4.ThreadServerApplication.run(SourceFile:628) [server.jar:git-Spigot-1.7.9-R0.2-208-ge0f2e95]
-[22:40:13] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[22:40:13] [Server thread/INFO]: Done (1,108s)! For help, type "help" or "?"
-[22:40:53] [User Authenticator #1/INFO]: UUID of player VladClohara is cff2f863-6708-3d8c-a859-2a26fc6fcb71
-[22:40:53] [Server thread/INFO]: VladClohara[/26.142.254.143:64316] logged in with entity id 232 at ([world] 19.5, 71.0, 254.5)
-[22:41:13] [Server thread/INFO]: VladClohara lost connection: Disconnected
-[22:41:13] [Server thread/INFO]: VladClohara left the game.
-[23:17:36] [Server thread/INFO]: CONSOLE: Stopping the server..[m
-[23:17:36] [Server thread/INFO]: Stopping server
-[23:17:36] [Server thread/INFO]: [LuckPerms] Disabling LuckPerms v5.4.52
-[23:17:36] [Server thread/INFO]: [LuckPerms] Starting shutdown process...
-[23:17:36] [Server thread/INFO]: [LuckPerms] Closing storage...
-[23:17:36] [Server thread/INFO]: [LuckPerms] Goodbye!
-[23:17:36] [Server thread/INFO]: Saving players
-[23:17:36] [Server thread/INFO]: Saving worlds
-[23:17:36] [Server thread/INFO]: Saving chunks for level 'world'/Overworld
-[23:17:37] [Server thread/INFO]: Saving chunks for level 'world_nether'/Nether
-[23:17:37] [Server thread/INFO]: Saving chunks for level 'world_the_end'/The End
-[23:17:37] [Thread-4/INFO]: Stopping server
+[10:46:16] [main/INFO]: Loading tweak class name cpw.mods.fml.common.launcher.FMLServerTweaker
+[10:46:16] [main/INFO]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLServerTweaker
+[10:46:16] [main/INFO]: Calling tweak class cpw.mods.fml.common.launcher.FMLServerTweaker
+[10:46:16] [main/INFO]: Forge Mod Loader version 7.99.4.1614 for Minecraft 1.7.10 loading
+[10:46:16] [main/INFO]: Java is Java HotSpot(TM) Client VM, version 1.8.0_351, running on Windows 11:x86:10.0, installed at C:\Program Files (x86)\Java\jre1.8.0_351
+[10:46:16] [main/INFO]: [pw.prok.imagine.ImagineLoadingPlugin:<clinit>:26]: Loading plugin initialized!
+[10:46:19] [main/INFO]: Loading tweaker forestry.shade.javacheck.Java7Checker from forestry_1.7.10_4.2.14.62.jar
+[10:46:19] [main/INFO]: [io.gitlab.dwarfyassassin.lotrucp.core.UCPCoreMod:<clinit>:23]: LOTR-UCP: Found core mod.
+[10:46:19] [main/WARN]: The following coremods do not have a @MCVersion annotation. They may cause problems if this is not the correct version of Minecraft for them.
+[10:46:19] [main/WARN]: Missing @MCVersion: codechicken.core.launch.CodeChickenCorePlugin  codechicken.nei.asm.NEICorePlugin  thaumcraft.codechicken.core.launch.DepLoader  
+[10:46:19] [main/INFO]: Loading tweak class name cpw.mods.fml.common.launcher.FMLInjectionAndSortingTweaker
+[10:46:19] [main/INFO]: Loading tweak class name forestry.shade.javacheck.Java7Checker
+[10:46:19] [main/INFO]: Loading tweak class name cpw.mods.fml.common.launcher.FMLDeobfTweaker
+[10:46:19] [main/INFO]: Calling tweak class cpw.mods.fml.common.launcher.FMLInjectionAndSortingTweaker
+[10:46:19] [main/INFO]: Calling tweak class cpw.mods.fml.common.launcher.FMLInjectionAndSortingTweaker
+[10:46:19] [main/INFO]: Calling tweak class cpw.mods.fml.relauncher.CoreModManager$FMLPluginWrapper
+[10:46:20] [main/INFO]: Calling tweak class cpw.mods.fml.relauncher.CoreModManager$FMLPluginWrapper
+[10:46:20] [main/INFO]: Calling tweak class cpw.mods.fml.relauncher.CoreModManager$FMLPluginWrapper
+[10:46:20] [main/INFO]: Calling tweak class cpw.mods.fml.relauncher.CoreModManager$FMLPluginWrapper
+[10:46:21] [main/INFO]: Calling tweak class cpw.mods.fml.relauncher.CoreModManager$FMLPluginWrapper
+[10:46:21] [main/INFO]: Calling tweak class cpw.mods.fml.relauncher.CoreModManager$FMLPluginWrapper
+[10:46:21] [main/INFO]: Calling tweak class cpw.mods.fml.relauncher.CoreModManager$FMLPluginWrapper
+[10:46:21] [main/INFO]: Calling tweak class forestry.shade.javacheck.Java7Checker
+[10:46:21] [main/INFO]: Calling tweak class cpw.mods.fml.common.launcher.FMLDeobfTweaker
+[10:46:21] [main/INFO]: Calling tweak class cpw.mods.fml.relauncher.CoreModManager$FMLPluginWrapper
+[10:46:21] [main/INFO]: Loading tweak class name cpw.mods.fml.common.launcher.TerminalTweaker
+[10:46:21] [main/INFO]: Calling tweak class cpw.mods.fml.common.launcher.TerminalTweaker
+[10:46:21] [main/INFO]: [lotr.common.coremod.LOTRClassTransformer:patchEntityPlayer:958]: LOTRCore: Patched method func_71043_e
+[10:46:21] [main/INFO]: [lotr.common.coremod.LOTRClassTransformer:patchEntityLivingBase:1030]: LOTRCore: Patched method func_70645_a
+[10:46:21] [main/INFO]: [lotr.common.coremod.LOTRClassTransformer:patchEntityLivingBase:1005]: LOTRCore: Patched method func_70658_aO
+[10:46:21] [main/INFO]: Launching wrapped minecraft {net.minecraft.server.MinecraftServer}
+[10:46:21] [main/INFO]: [lotr.common.coremod.LOTRClassTransformer:patchBlockStone:274]: LOTRCore: Added method func_149673_e
+[10:46:21] [main/INFO]: [lotr.common.coremod.LOTRClassTransformer:patchBlockStone:306]: LOTRCore: Added method func_149691_a
+[10:46:21] [main/INFO]: [lotr.common.coremod.LOTRClassTransformer:patchBlockGrass:342]: LOTRCore: Patched method func_149674_a
+[10:46:21] [main/INFO]: [lotr.common.coremod.LOTRClassTransformer:patchBlockDirt:397]: LOTRCore: Patched method func_149692_a
+[10:46:21] [main/INFO]: [lotr.common.coremod.LOTRClassTransformer:patchBlockDirt:412]: LOTRCore: Patched method func_149644_j
+[10:46:21] [main/INFO]: [lotr.common.coremod.LOTRClassTransformer:patchBlockDirt:446]: LOTRCore: Patched method func_149643_k
+[10:46:21] [main/INFO]: [lotr.common.coremod.LOTRClassTransformer:patchBlockDirt:383]: LOTRCore: Patched method <clinit>
+[10:46:21] [main/INFO]: [lotr.common.coremod.LOTRClassTransformer:patchBlockStaticLiquid:484]: LOTRCore: Patched method func_149674_a
+[10:46:21] [main/INFO]: [lotr.common.coremod.LOTRClassTransformer:patchBlockPistonBase:856]: LOTRCore: Patched method func_149696_a 1 times
+[10:46:21] [main/INFO]: [lotr.common.coremod.LOTRClassTransformer:patchBlockPistonBase:856]: LOTRCore: Patched method canExtend_IntCB 1 times
+[10:46:21] [main/INFO]: [lotr.common.coremod.LOTRClassTransformer:patchBlockPistonBase:856]: LOTRCore: Patched method func_150079_i 1 times
+[10:46:21] [main/INFO]: [lotr.common.coremod.LOTRClassTransformer:patchBlockFire:557]: LOTRCore: Patched method func_149674_a
+[10:46:21] [main/INFO]: [lotr.common.coremod.LOTRClassTransformer:patchBlockFire:594]: LOTRCore: Patched method tryCatchFire
+[10:46:21] [main/INFO]: [lotr.common.coremod.LOTRClassTransformer:patchBlockFence:635]: LOTRCore: Patched method func_149826_e
+[10:46:21] [main/INFO]: [lotr.common.coremod.LOTRClassTransformer:patchBlockFence:649]: LOTRCore: Patched method func_149825_a
+[10:46:21] [main/INFO]: [lotr.common.coremod.LOTRClassTransformer:patchBlockTrapdoor:757]: LOTRCore: Patched method func_149645_b
+[10:46:21] [main/INFO]: [lotr.common.coremod.LOTRClassTransformer:patchBlockTrapdoor:729]: LOTRCore: Patched method func_149707_d
+[10:46:21] [main/INFO]: [lotr.common.coremod.LOTRClassTransformer:patchBlockTrapdoor:743]: LOTRCore: Patched method func_150119_a
+[10:46:21] [main/INFO]: [lotr.common.coremod.LOTRClassTransformer:patchBlockCauldron:887]: LOTRCore: Patched method func_149645_b
+[10:46:21] [main/INFO]: [lotr.common.coremod.LOTRClassTransformer:patchBlockWall:793]: LOTRCore: Patched method func_150091_e
+[10:46:21] [main/INFO]: [lotr.common.coremod.LOTRClassTransformer:patchBlockAnvil:927]: LOTRCore: Added method func_149668_a
+[10:46:22] [main/INFO]: [lotr.common.coremod.LOTRClassTransformer:patchPotionDamage:1857]: LOTRCore: Patched method func_111183_a
+[10:46:22] [main/INFO]: [lotr.common.coremod.LOTRClassTransformer:patchEntityMinecart:1229]: LOTRCore: Patched method func_145821_a
+[10:46:22] [main/INFO]: [lotr.compatibility.LOTRModChecker:isCauldronServer:58]: LOTR: Found Thermos installed
+[10:46:22] [main/INFO]: [lotr.common.coremod.LOTRClassTransformer:patchItemStack:1787]: LOTRCore: Patched method isDamaged for Cauldron
+[10:46:22] [main/INFO]: [lotr.common.coremod.LOTRClassTransformer:patchEntityHorse:1092]: LOTRCore: Patched method func_70612_e
+[10:46:22] [Server thread/INFO]: Starting minecraft server version 1.7.10
+[10:46:22] [Server thread/WARN]: To start the server with more ram, launch it as "java -Xmx1024M -Xms1024M -jar minecraft_server.jar"
+[10:46:22] [Server thread/INFO]: Attempting early MinecraftForge initialization
+[10:46:22] [Server thread/INFO]: MinecraftForge v10.13.4.1614 Initialized
+[10:46:23] [Server thread/INFO]: Replaced 184 ore recipies
+[10:46:23] [Server thread/INFO]: Completed early MinecraftForge initialization
+[10:46:23] [Server thread/INFO]: Running patcher FML for cpw.mods.fml.common.LoadController
+[10:46:23] [Server thread/INFO]: Patched the FML load controller.
+[10:46:23] [Server thread/INFO]: Ran all active patches.
+[10:46:23] [Server thread/INFO]: Found 0 mods from the command line. Injecting into mod discoverer
+[10:46:23] [Server thread/INFO]: Searching C:\Users\vladc\Desktop\WorckMinecraftServer1.7.10\mods for mods
+[10:46:23] [Server thread/INFO]: Also searching C:\Users\vladc\Desktop\WorckMinecraftServer1.7.10\mods\1.7.10 for mods
+[10:46:25] [Server thread/INFO]: Forge Mod Loader has identified 15 mods to load
+[10:46:25] [Server thread/INFO]: Loaded 2 mod patches.
+[10:46:25] [Server thread/INFO]: FML has found a non-mod file CodeChickenLib-1.7.10-1.1.3.141-universal.jar in your mods directory. It will now be injected into your classpath. This could severe stability issues, it should be removed if possible.
+[10:46:26] [Server thread/INFO]: Attempting connection with missing mods [mcp, FML, Forge, kimagine, CodeChickenCore, NotEnoughItems, Baubles, BiomesOPlenty, Botania, Forestry, lotr, Mantle, TConstruct, Thaumcraft, witchery] at CLIENT
+[10:46:26] [Server thread/INFO]: Attempting connection with missing mods [mcp, FML, Forge, kimagine, CodeChickenCore, NotEnoughItems, Baubles, BiomesOPlenty, Botania, Forestry, lotr, Mantle, TConstruct, Thaumcraft, witchery] at SERVER
+[10:46:26] [Server thread/INFO]: LOTRCore: Patched method getEntitySpawningPacket
+[10:46:26] [Server thread/ERROR]: [Environment Checks] Bukkit implementation detected. This may cause issues. Bukkit implementations include Craftbukkit and Cauldron(MCPC+).
+[10:46:26] [Server thread/INFO]: Preparing to take over the world
+[10:46:26] [Server thread/INFO]: Processing ObjectHolder annotations
+[10:46:26] [Server thread/INFO]: Found 341 ObjectHolder annotations
+[10:46:26] [Server thread/INFO]: Identifying ItemStackHolder annotations
+[10:46:26] [Server thread/INFO]: Found 0 ItemStackHolder annotations
+[10:46:26] [Server thread/INFO]: Configured a dormant chunk cache size of 0
+[10:46:27] [Forge Version Check/WARN]: com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+[10:46:27] [Forge Version Check/WARN]: 	at com.google.gson.Gson.fromJson(Gson.java:815)
+[10:46:27] [Forge Version Check/WARN]: 	at com.google.gson.Gson.fromJson(Gson.java:768)
+[10:46:27] [Forge Version Check/WARN]: 	at com.google.gson.Gson.fromJson(Gson.java:717)
+[10:46:27] [Forge Version Check/WARN]: 	at com.google.gson.Gson.fromJson(Gson.java:689)
+[10:46:27] [Forge Version Check/WARN]: 	at net.minecraftforge.common.ForgeVersion$1.run(ForgeVersion.java:94)
+[10:46:27] [Forge Version Check/WARN]: Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+[10:46:27] [Forge Version Check/WARN]: 	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:374)
+[10:46:27] [Forge Version Check/WARN]: 	at com.google.gson.internal.bind.MapTypeAdapterFactory$Adapter.read(MapTypeAdapterFactory.java:183)
+[10:46:27] [Forge Version Check/WARN]: 	at com.google.gson.internal.bind.MapTypeAdapterFactory$Adapter.read(MapTypeAdapterFactory.java:145)
+[10:46:27] [Forge Version Check/WARN]: 	at com.google.gson.Gson.fromJson(Gson.java:803)
+[10:46:27] [Forge Version Check/WARN]: 	... 4 more
+[10:46:27] [Server thread/INFO]: LOTRCore: Patched method <init>
+[10:46:27] [Server thread/INFO]: LOTRCore: Patched method <init>
+[10:46:27] [Server thread/INFO]: LOTRCore: Patched method <init>: 2 instances of World.setBlock()
+[10:46:27] [Server thread/INFO]: LOTRCore: Patched method func_70071_h_: 1 instances of World.setBlock()
+[10:46:27] [Server thread/INFO]: LOTR: Found logger
+[10:46:27] [Server thread/INFO]: LOTR: Registered 144 packet types
+[10:46:28] [Server thread/INFO]: LOTR: Successfully detected Cauldron server and disabled: nothing! (Thanks, ASM!)
+[10:46:29] [Server thread/INFO]: LOTRCore: Patched method func_92093_a
+[10:46:30] [Server thread/INFO]: Running patcher Botania for vazkii.botania.common.block.subtile.generating.SubTileKekimurus
+[10:46:30] [Server thread/INFO]: Patched the Kekimurus to eat all LOTR cakes.
+[10:46:30] [Server thread/INFO]: Ran all active patches.
+[10:46:30] [Server thread/INFO]: WARNING! Expected ALOAD 9! Instead got org.objectweb.asm.tree.VarInsnNode@aa10b1
+[10:46:30] [Server thread/INFO]: WARNING! Things may break!
+[10:46:30] [Server thread/INFO]: LOTRCore: Patched method ApplyArmor for Cauldron
+[10:46:30] [Server thread/INFO]: [Botania] Registered 1215 recipes.
+[10:46:31] [Server thread/INFO]: Module BuildCraft 6 Fuels Plugin failed to load: Compatible BuildCraftAPI|fuels version not found
+[10:46:31] [Server thread/INFO]: Module BuildCraft 6 Recipes Plugin failed to load: Compatible BuildCraftAPI|recipes version not found
+[10:46:31] [Server thread/INFO]: Module BuildCraft 6 Statements Plugin failed to load: Compatible BuildCraftAPI|statements version not found
+[10:46:31] [Server thread/INFO]: Module BuildCraft 6 Transport Plugin failed to load: BuildCraft|Transport not found
+[10:46:31] [Server thread/INFO]: Module AgriCraft Plugin failed to load: AgriCraft not found
+[10:46:31] [Server thread/INFO]: Module Chisel Plugin failed to load: Chisel not found
+[10:46:31] [Server thread/INFO]: Module EnderIO Plugin failed to load: EnderIO not found
+[10:46:31] [Server thread/INFO]: Module Erebus Plugin failed to load: Erebus not found
+[10:46:31] [Server thread/INFO]: Module ExtraUtilities Plugin failed to load: ExtraUtilities not found
+[10:46:31] [Server thread/INFO]: Module Growthcraft Plugin failed to load: GrowthCraft not found
+[10:46:31] [Server thread/INFO]: Module HarvestCraft Plugin failed to load: HarvestCraft not found
+[10:46:31] [Server thread/INFO]: Module ImmersiveEngineering Plugin failed to load: Immersive Engineering not found
+[10:46:31] [Server thread/INFO]: Module IndustrialCraft2 Plugin failed to load: IndustrialCraft2 not found
+[10:46:31] [Server thread/INFO]: Module MagicalCrops Plugin failed to load: Magical Crops not found
+[10:46:31] [Server thread/INFO]: Module MineFactoryReloaded Plugin failed to load: MineFactoryReloaded not found
+[10:46:31] [Server thread/INFO]: Module Natura Plugin failed to load: Natura not found
+[10:46:31] [Server thread/INFO]: Module PlantMegaPack Plugin failed to load: Plant Mega Pack not found
+[10:46:31] [Server thread/INFO]: Module RotaryCraft Plugin failed to load: RotaryCraft not found
+[10:46:31] [Server thread/INFO]: Mantle (1.7.10-0.3.2.jenkins191) -- Preparing for launch.
+[10:46:31] [Server thread/INFO]: Entering preinitialization phase.
+[10:46:31] [Server thread/INFO]: Loading configuration from disk.
+[10:46:31] [Server thread/INFO]: Configuration load completed.
+[10:46:31] [Server thread/INFO]: Skipping Pulse Tinkers Waila Compatibility; missing dependency: Waila
+[10:46:31] [Server thread/INFO]: Skipping Pulse Tinkers BuildCraft Compatibility; missing dependency: BuildCraft|Transport
+[10:46:31] [Server thread/INFO]: Skipping Pulse Tinkers AE2 Compatibility; missing dependency: appliedenergistics2
+[10:46:31] [Server thread/INFO]: Skipping Pulse Tinkers IC2 Compatibility; missing dependency: IC2
+[10:46:31] [Server thread/INFO]: Skipping Pulse Tinkers Mystcraft Compatibility; missing dependency: Mystcraft
+[10:46:31] [Server thread/INFO]: Skipping Pulse Tinkers MFR Compatibility; missing dependency: MineFactoryReloaded
+[10:46:31] [Server thread/INFO]: Skipping Pulse Tinkers TE4 Compatibility; missing dependency: ThermalExpansion
+[10:46:31] [Server thread/INFO]: Skipping Pulse Tinkers Thermal Foundation Compatibility; missing dependency: ThermalFoundation
+[10:46:31] [Server thread/INFO]: Skipping Pulse Tinkers FMP Compatibility; missing dependency: ForgeMultipart
+[10:46:31] [Server thread/INFO]: Skipping Pulse Tinkers' Underground Biomes Compatiblity; missing dependency: UndergroundBiomes
+[10:46:31] [Server thread/INFO]: Skipping Pulse Tinkers RF-Tools Compatibility; missing dependency: rftools
+[10:46:31] [Server thread/INFO]: Gear module active. Adding gear cast.
+[10:46:33] [Server thread/INFO]: Applying holder lookups
+[10:46:33] [Server thread/INFO]: Holder lookups applied
+[10:46:33] [Server thread/INFO]: Injecting itemstacks
+[10:46:33] [Server thread/INFO]: Itemstack injection complete
+[10:46:33] [Server thread/INFO]: Loading properties
+[10:46:33] [Server thread/INFO]: Default game type: SURVIVAL
+[10:46:33] [Server thread/INFO]: This server is running Cauldron version 1.7.10-1614.58 (MC: 1.7.10) (Implementing API version 1.7.10-R0.1-SNAPSHOT)
+[10:46:34] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[10:46:34] [Server thread/INFO]: Using 12 threads for Netty based IO
+[10:46:34] [Server thread/INFO]: Generating keypair
+[10:46:34] [Server thread/INFO]: Starting Minecraft server on *:25565
+[10:46:34] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[10:46:34] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[10:46:34] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[10:46:34] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[10:46:35] [Server thread/INFO]: LOTRLore: Category ruins has loaded 13 lore texts, of which 5 rewardable
+[10:46:35] [Server thread/INFO]: LOTRLore: Category shire has loaded 20 lore texts, of which 11 rewardable
+[10:46:35] [Server thread/INFO]: LOTRLore: Category bree has loaded 14 lore texts, of which 12 rewardable
+[10:46:35] [Server thread/INFO]: LOTRLore: Category blue_mountains has loaded 8 lore texts, of which 5 rewardable
+[10:46:35] [Server thread/INFO]: LOTRLore: Category lindon has loaded 11 lore texts, of which 10 rewardable
+[10:46:35] [Server thread/INFO]: LOTRLore: Category eriador has loaded 14 lore texts, of which 14 rewardable
+[10:46:35] [Server thread/INFO]: LOTRLore: Category rivendell has loaded 24 lore texts, of which 22 rewardable
+[10:46:35] [Server thread/INFO]: LOTRLore: Category eregion has loaded 7 lore texts, of which 6 rewardable
+[10:46:35] [Server thread/INFO]: LOTRLore: Category dunland has loaded 6 lore texts, of which 5 rewardable
+[10:46:35] [Server thread/INFO]: LOTRLore: Category gundabad has loaded 4 lore texts, of which 4 rewardable
+[10:46:35] [Server thread/INFO]: LOTRLore: Category angmar has loaded 5 lore texts, of which 5 rewardable
+[10:46:35] [Server thread/INFO]: LOTRLore: Category woodland_realm has loaded 4 lore texts, of which 4 rewardable
+[10:46:35] [Server thread/INFO]: LOTRLore: Category dol_guldur has loaded 4 lore texts, of which 4 rewardable
+[10:46:35] [Server thread/INFO]: LOTRLore: Category dale has loaded 14 lore texts, of which 12 rewardable
+[10:46:35] [Server thread/INFO]: LOTRLore: Category durins_folk has loaded 13 lore texts, of which 6 rewardable
+[10:46:35] [Server thread/INFO]: LOTRLore: Category lothlorien has loaded 10 lore texts, of which 10 rewardable
+[10:46:35] [Server thread/INFO]: LOTRLore: Category rohan has loaded 5 lore texts, of which 2 rewardable
+[10:46:35] [Server thread/INFO]: LOTRLore: Category isengard has loaded 4 lore texts, of which 3 rewardable
+[10:46:35] [Server thread/INFO]: LOTRLore: Category gondor has loaded 21 lore texts, of which 16 rewardable
+[10:46:35] [Server thread/INFO]: LOTRLore: Category mordor has loaded 6 lore texts, of which 6 rewardable
+[10:46:35] [Server thread/INFO]: LOTRLore: Category dorwinion has loaded 7 lore texts, of which 5 rewardable
+[10:46:35] [Server thread/INFO]: LOTRLore: Category rhun has loaded 9 lore texts, of which 5 rewardable
+[10:46:35] [Server thread/INFO]: LOTRLore: Category harnennor has loaded 12 lore texts, of which 9 rewardable
+[10:46:35] [Server thread/INFO]: LOTRLore: Category southron has loaded 16 lore texts, of which 14 rewardable
+[10:46:35] [Server thread/INFO]: LOTRLore: Category umbar has loaded 18 lore texts, of which 16 rewardable
+[10:46:35] [Server thread/INFO]: LOTRLore: Category nomad has loaded 8 lore texts, of which 5 rewardable
+[10:46:35] [Server thread/INFO]: LOTRLore: Category gulf has loaded 9 lore texts, of which 7 rewardable
+[10:46:35] [Server thread/INFO]: LOTRLore: Category far_harad has loaded 0 lore texts, of which 0 rewardable
+[10:46:35] [Server thread/INFO]: LOTRLore: Category far_harad_jungle has loaded 0 lore texts, of which 0 rewardable
+[10:46:35] [Server thread/INFO]: LOTRLore: Category half_troll has loaded 0 lore texts, of which 0 rewardable
+[10:46:35] [Server thread/INFO]: LOTRCore: Patched method func_151503_a
+[10:46:36] [Server thread/INFO]: LOTRRoads: Creating roads (reticulating splines)
+[10:47:22] [Server thread/INFO]: Entering initialization phase.
+[10:47:37] [Server thread/ERROR]: Fatal errors were detected during the transition from INITIALIZATION to POSTINITIALIZATION. Loading cannot continue
+[10:47:41] [Server thread/WARN]: Can't revert to frozen GameData state without freezing first.
+[10:47:49] [Server thread/WARN]: Exception in thread "Server thread" 
+[10:47:49] [Server thread/WARN]: java.lang.NoClassDefFoundError: cpw/mods/fml/common/event/FMLModIdMappingEvent$1
+[10:47:49] [Server thread/WARN]: 	at cpw.mods.fml.common.event.FMLModIdMappingEvent.<init>(FMLModIdMappingEvent.java:39)
+[10:47:50] [Server thread/WARN]: 	at cpw.mods.fml.common.Loader.fireRemapEvent(Loader.java:984)
+[10:47:50] [Server thread/WARN]: 	at cpw.mods.fml.common.registry.GameData.revertToFrozen(GameData.java:742)
+[10:47:50] [Server thread/WARN]: 	at cpw.mods.fml.common.Loader.serverStopped(Loader.java:849)
+[10:47:50] [Server thread/WARN]: 	at cpw.mods.fml.common.FMLCommonHandler.handleServerStopped(FMLCommonHandler.java:490)
+[10:47:50] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:774)
+[10:47:50] [Server thread/WARN]: 	at java.lang.Thread.run(Unknown Source)
+[10:47:50] [Server thread/WARN]: Caused by: java.lang.ClassNotFoundException: cpw.mods.fml.common.event.FMLModIdMappingEvent$1
+[10:47:50] [Server thread/WARN]: 	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:191)
+[10:47:50] [Server thread/WARN]: 	at java.lang.ClassLoader.loadClass(Unknown Source)
+[10:47:51] [Server thread/WARN]: 	at java.lang.ClassLoader.loadClass(Unknown Source)
+[10:47:51] [Server thread/WARN]: 	... 7 more
+[10:47:51] [Server thread/WARN]: Caused by: java.lang.OutOfMemoryError: Java heap space
+[10:56:34] [Spigot Metrics Thread/WARN]: Exception in thread "Spigot Metrics Thread" 
+[10:56:34] [Spigot Metrics Thread/WARN]: java.lang.OutOfMemoryError: Java heap space

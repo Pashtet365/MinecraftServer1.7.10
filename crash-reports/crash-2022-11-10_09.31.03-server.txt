@@ -1,0 +1,46 @@
+---- Minecraft Crash Report ----
+// You should try our sister game, Minceraft!
+
+Time: 10.11.22 9:31
+Description: Exception in server tick loop
+
+Missing Mods:
+	Baubles : any
+
+cpw.mods.fml.common.MissingModsException
+	at cpw.mods.fml.common.Loader.sortModList(Loader.java:243)
+	at cpw.mods.fml.common.Loader.loadMods(Loader.java:493)
+	at cpw.mods.fml.server.FMLServerHandler.beginServerLoading(FMLServerHandler.java:87)
+	at cpw.mods.fml.common.FMLCommonHandler.onServerStart(FMLCommonHandler.java:320)
+	at net.minecraft.server.dedicated.DedicatedServer.func_71197_b(DedicatedServer.java:176)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:643)
+	at java.lang.Thread.run(Unknown Source)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Thermos Version: cyberdynecc:Thermos:1.7.10-1614.58
+	Plugins: ~~ERROR~~ NullPointerException: null
+	Disabled Plugins: ~~ERROR~~ NullPointerException: null
+	Operating System: Windows 11 (x86) version 10.0
+	Java Version: 1.8.0_351, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) Client VM (mixed mode), Oracle Corporation
+	Memory: 64937568 bytes (61 MB) / 155025408 bytes (147 MB) up to 259522560 bytes (247 MB)
+	JVM Flags: 0 total; 
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP v9.05 FML v7.10.99.99 Minecraft Forge 10.13.4.1614 6 mods loaded, 6 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+	U	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) 
+	U	FML{7.10.99.99} [Forge Mod Loader] (minecraft_server.1.7.10.jar) 
+	U	Forge{10.13.4.1614} [Minecraft Forge] (minecraft_server.1.7.10.jar) 
+	U	kimagine{0.2} [KImagine] (minecraft.jar) 
+	U	BiomesOPlenty{2.1.0} [Biomes O' Plenty] (BiomesOPlenty-1.7.10-2.1.0.2308-universal.jar) 
+	U	Botania{r1.8-249} [Botania] (Botania_1.7.10_r1.8_249.jar) 
+	Profiler Position: N/A (disabled)
+	Is Modded: Definitely; Server brand changed to 'thermos,cauldron,craftbukkit,mcpc,kcauldron,fml,forge'
+	Type: Dedicated Server (map_server.txt)

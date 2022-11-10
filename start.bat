@@ -1,3 +1,2 @@
-@echo  off
-java.exe -Xms1024M -Xmx5120M -jar server.jar 
+java -jar minecraft_server.1.7.10.jar
 pause
