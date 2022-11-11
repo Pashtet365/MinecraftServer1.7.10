@@ -1,2 +1,0 @@
-java -jar minecraft_server.1.7.10.jar
-pause

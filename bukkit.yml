@@ -69,3 +69,7 @@ world-settings:
     enabled: true
   outer:
     enabled: true
+  lotrutumno:
+    enabled: true
+  lotrmiddleearth:
+    enabled: true
