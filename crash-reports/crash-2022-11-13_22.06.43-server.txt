@@ -1,0 +1,109 @@
+---- Minecraft Crash Report ----
+// Hey, that tickles! Hehehe!
+
+Time: 13.11.22 22:06
+Description: Exception in server tick loop
+
+cpw.mods.fml.common.LoaderException: java.lang.NoClassDefFoundError: net/minecraft/client/Minecraft
+	at cpw.mods.fml.common.LoadController.transition(LoadController.java:163)
+	at cpw.mods.fml.common.Loader.initializeMods(Loader.java:739)
+	at cpw.mods.fml.server.FMLServerHandler.finishServerLoading(FMLServerHandler.java:97)
+	at cpw.mods.fml.common.FMLCommonHandler.onServerStarted(FMLCommonHandler.java:325)
+	at net.minecraft.server.dedicated.DedicatedServer.func_71197_b(DedicatedServer.java:288)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:643)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NoClassDefFoundError: net/minecraft/client/Minecraft
+	at lakmoore.sel.client.SEL.init(SEL.java:68)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at cpw.mods.fml.common.FMLModContainer.handleModStateEvent(FMLModContainer.java:532)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.common.eventbus.EventSubscriber.handleEvent(EventSubscriber.java:74)
+	at com.google.common.eventbus.SynchronizedEventSubscriber.handleEvent(SynchronizedEventSubscriber.java:47)
+	at com.google.common.eventbus.EventBus.dispatch(EventBus.java:322)
+	at com.google.common.eventbus.EventBus.dispatchQueuedEvents(EventBus.java:304)
+	at com.google.common.eventbus.EventBus.post(EventBus.java:275)
+	at cpw.mods.fml.common.LoadController.sendEventToModContainer(LoadController.java:212)
+	at cpw.mods.fml.common.LoadController.propogateStateMessage(LoadController.java:190)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.common.eventbus.EventSubscriber.handleEvent(EventSubscriber.java:74)
+	at com.google.common.eventbus.SynchronizedEventSubscriber.handleEvent(SynchronizedEventSubscriber.java:47)
+	at com.google.common.eventbus.EventBus.dispatch(EventBus.java:322)
+	at com.google.common.eventbus.EventBus.dispatchQueuedEvents(EventBus.java:304)
+	at com.google.common.eventbus.EventBus.post(EventBus.java:275)
+	at cpw.mods.fml.common.LoadController.distributeStateMessage(LoadController.java:119)
+	at cpw.mods.fml.common.Loader.initializeMods(Loader.java:737)
+	... 5 more
+Caused by: java.lang.ClassNotFoundException: net.minecraft.client.Minecraft
+	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:191)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 32 more
+Caused by: java.lang.RuntimeException: Attempted to load class bao for invalid side SERVER
+	at cpw.mods.fml.common.asm.transformers.SideTransformer.transform(SideTransformer.java:51)
+	at net.minecraft.launchwrapper.LaunchClassLoader.runTransformers(LaunchClassLoader.java:279)
+	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:176)
+	... 34 more
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Thermos Version: cyberdynecc:Thermos:1.7.10-1614.58
+	Plugins: 
+	Disabled Plugins: 
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 1.8.0_351, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 1265823816 bytes (1207 MB) / 2010644480 bytes (1917 MB) up to 3750756352 bytes (3577 MB)
+	JVM Flags: 2 total; -Xms1024M -Xmx4024M
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP v9.05 FML v7.10.99.99 Minecraft Forge 10.13.4.1614 27 mods loaded, 27 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+	UCHI	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) 
+	UCHI	FML{7.10.99.99} [Forge Mod Loader] (minecraft_server.1.7.10.jar) 
+	UCHI	Forge{10.13.4.1614} [Minecraft Forge] (minecraft_server.1.7.10.jar) 
+	UCHI	kimagine{0.2} [KImagine] (minecraft.jar) 
+	UCHI	CodeChickenCore{1.0.7.48} [CodeChicken Core] (minecraft.jar) 
+	UCHI	ivtoolkit{1.2.1} [IvToolkit] (minecraft.jar) 
+	UCHI	NotEnoughItems{1.0.5.120} [Not Enough Items] (NotEnoughItems-1.7.10-1.0.5.120-universal.jar) 
+	UCHI	psychedelicraftcore{1.4} [Psychedelicraft Core] (minecraft.jar) 
+	UCHI	legendarium{4.1} [Legendary Item] (1.7.10LegendaryItemv4.1.jar) 
+	UCHI	antiqueatlas{1.7.10-4.4.0} [Antique Atlas] (antiqueatlas-1.7.10-4.4.0.jar) 
+	UCHI	Baubles{1.0.1.10} [Baubles] (Baubles_1.7.10_1.0.1.10.jar) 
+	UCHI	BiomesOPlenty{2.1.0} [Biomes O' Plenty] (BiomesOPlenty-1.7.10-2.1.0.2308-universal.jar) 
+	UCHI	AWWayofTime{v1.3.3} [Blood Magic: Alchemical Wizardry] (BloodMagic_1.7.10_1.3.3_17.jar) 
+	UCHI	lotr{Update v36.14 for Minecraft 1.7.10} [The Lord of the Rings Mod] (LOTRMod+v36.14.jar) 
+	UCHI	Thaumcraft{4.2.3.5} [Thaumcraft] (Thaumcraft_1.7.10_4.2.3.5.jar) 
+	UCHI	Botania{r1.8-249} [Botania] (Botania_1.7.10_r1.8_249.jar) 
+	UCHI	teamod{1.2.1} [Richard's Coffee & Tea Mod] (CoffeeAndTeaMod_1.2.1_1.7.10.jar) 
+	UCHI	Forestry{4.2.14.62} [Forestry for Minecraft] (forestry_1.7.10_4.2.14.62.jar) 
+	UCHI	hidenames{1.1.7} [Hide Names] (Hide_Names_1.7.10_1.1.8.jar) 
+	UCHI	Mantle{1.7.10-0.3.2.jenkins191} [Mantle] (Mantle-1.7.10-0.3.2b.jar) 
+	UCHI	psychedelicraft{1.5.2} [Psychedelicraft] (psychedelicraft-1.5.2.jar) 
+	UCHI	sit{v1.1} [Sit] (sit_1.7.10_v1.1.jar) 
+	UCHE	sel{3.0.4} [Smooth Entity Light] (SmoothEntityLight_3.0.4_MC1.7.10.jar) 
+	UCHI	SoManyEnchantments{0.3.0} [Rin's So Many Enchantments] (SoManyEnchantments_Final1.7.10_V0.3.0.jar) 
+	UCHI	EnchExtensioner{0.3.0} [EnchExtensioner] (SoManyEnchantments_Final1.7.10_V0.3.0.jar) 
+	UCHI	TConstruct{1.7.10-1.8.8.build991} [Tinkers' Construct] (TConstruct-1.7.10-1.8.8.build991.jar) 
+	UCHI	witchery{0.24.1} [Witchery] (witchery_1.7.10_0.24.1.jar) 
+	Mantle Environment: DO NOT REPORT THIS CRASH! Unsupported mods in environment: bukkit
+	TConstruct Environment: Environment healthy.
+	Forestry : Warning: You have mods that change the behavior of Minecraft, ForgeModLoader, and/or Minecraft Forge to your client: 
+Bukkit, Cauldron, or other Bukkit replacement
+These may have caused this error, and may not be supported. Try reproducing the crash WITHOUT these mods, and report it then.
+	Profiler Position: N/A (disabled)
+	Player Count: 0 / 20; []
+	Is Modded: Definitely; Server brand changed to 'thermos,cauldron,craftbukkit,mcpc,kcauldron,fml,forge'
+	Type: Dedicated Server (map_server.txt)

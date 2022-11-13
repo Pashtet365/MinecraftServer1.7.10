@@ -107,10 +107,12 @@ world-settings:
     allow-tnt-punishment: true
     infinite-water-source: true
     entity-despawn-immediate: false
-    worldgen-witchery-WitcheryWorldGenerator: true
-    worldgen-Thaumcraft-ThaumcraftWorldGenerator: true
-    worldgen-Forestry-WorldGenerator: true
+    worldgen-psychedelicraft-GeneratorGeneric: true
+    worldgen-teamod-BushWorldGenerator: true
     worldgen-TConstruct-SlimeIslandGen: true
+    worldgen-witchery-WitcheryWorldGenerator: true
+    worldgen-Forestry-WorldGenerator: true
+    worldgen-Thaumcraft-ThaumcraftWorldGenerator: true
     worldgen-TConstruct-TBaseWorldGenerator: true
   max-players-visible: -1
   use-real-names: false

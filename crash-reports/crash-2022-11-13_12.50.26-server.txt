@@ -1,0 +1,96 @@
+---- Minecraft Crash Report ----
+// Uh... Did I do that?
+
+Time: 13.11.22 12:50
+Description: Exception in server tick loop
+
+cpw.mods.fml.common.LoaderException: java.lang.NoClassDefFoundError: net/minecraft/client/renderer/tileentity/TileEntitySpecialRenderer
+	at cpw.mods.fml.common.LoadController.transition(LoadController.java:163)
+	at cpw.mods.fml.common.Loader.loadMods(Loader.java:544)
+	at cpw.mods.fml.server.FMLServerHandler.beginServerLoading(FMLServerHandler.java:87)
+	at cpw.mods.fml.common.FMLCommonHandler.onServerStart(FMLCommonHandler.java:320)
+	at net.minecraft.server.dedicated.DedicatedServer.func_71197_b(DedicatedServer.java:176)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:643)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NoClassDefFoundError: net/minecraft/client/renderer/tileentity/TileEntitySpecialRenderer
+	at mod.mcreator.nefsdecomod.<init>(nefsdecomod.java:108)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at java.lang.Class.newInstance(Unknown Source)
+	at cpw.mods.fml.common.ILanguageAdapter$JavaAdapter.getNewInstance(ILanguageAdapter.java:173)
+	at cpw.mods.fml.common.FMLModContainer.constructMod(FMLModContainer.java:506)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.common.eventbus.EventSubscriber.handleEvent(EventSubscriber.java:74)
+	at com.google.common.eventbus.SynchronizedEventSubscriber.handleEvent(SynchronizedEventSubscriber.java:47)
+	at com.google.common.eventbus.EventBus.dispatch(EventBus.java:322)
+	at com.google.common.eventbus.EventBus.dispatchQueuedEvents(EventBus.java:304)
+	at com.google.common.eventbus.EventBus.post(EventBus.java:275)
+	at cpw.mods.fml.common.LoadController.sendEventToModContainer(LoadController.java:212)
+	at cpw.mods.fml.common.LoadController.propogateStateMessage(LoadController.java:190)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.common.eventbus.EventSubscriber.handleEvent(EventSubscriber.java:74)
+	at com.google.common.eventbus.SynchronizedEventSubscriber.handleEvent(SynchronizedEventSubscriber.java:47)
+	at com.google.common.eventbus.EventBus.dispatch(EventBus.java:322)
+	at com.google.common.eventbus.EventBus.dispatchQueuedEvents(EventBus.java:304)
+	at com.google.common.eventbus.EventBus.post(EventBus.java:275)
+	at cpw.mods.fml.common.LoadController.distributeStateMessage(LoadController.java:119)
+	at cpw.mods.fml.common.Loader.loadMods(Loader.java:513)
+	... 5 more
+Caused by: java.lang.ClassNotFoundException: net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer
+	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:191)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 35 more
+Caused by: java.lang.NullPointerException
+	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:182)
+	... 37 more
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Thermos Version: cyberdynecc:Thermos:1.7.10-1614.58
+	Plugins: ~~ERROR~~ NullPointerException: null
+	Disabled Plugins: ~~ERROR~~ NullPointerException: null
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 1.8.0_351, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 1525404736 bytes (1454 MB) / 1840775168 bytes (1755 MB) up to 3750756352 bytes (3577 MB)
+	JVM Flags: 2 total; -Xms1024M -Xmx4024M
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP v9.05 FML v7.10.99.99 Minecraft Forge 10.13.4.1614 17 mods loaded, 17 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+	UC	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) 
+	UC	FML{7.10.99.99} [Forge Mod Loader] (minecraft_server.1.7.10.jar) 
+	UC	Forge{10.13.4.1614} [Minecraft Forge] (minecraft_server.1.7.10.jar) 
+	UC	kimagine{0.2} [KImagine] (minecraft.jar) 
+	UC	CodeChickenCore{1.0.7.48} [CodeChicken Core] (minecraft.jar) 
+	UC	NotEnoughItems{1.0.5.120} [Not Enough Items] (NotEnoughItems-1.7.10-1.0.5.120-universal.jar) 
+	UC	antiqueatlas{1.7.10-4.4.0} [Antique Atlas] (antiqueatlas-1.7.10-4.4.0.jar) 
+	UC	Baubles{1.0.1.10} [Baubles] (Baubles_1.7.10_1.0.1.10.jar) 
+	UC	BiomesOPlenty{2.1.0} [Biomes O' Plenty] (BiomesOPlenty-1.7.10-2.1.0.2308-universal.jar) 
+	UC	lotr{Update v36.14 for Minecraft 1.7.10} [The Lord of the Rings Mod] (LOTRMod+v36.14.jar) 
+	UC	Thaumcraft{4.2.3.5} [Thaumcraft] (Thaumcraft_1.7.10_4.2.3.5.jar) 
+	UC	Botania{r1.8-249} [Botania] (Botania_1.7.10_r1.8_249.jar) 
+	UC	Forestry{4.2.14.62} [Forestry for Minecraft] (forestry_1.7.10_4.2.14.62.jar) 
+	UC	Mantle{1.7.10-0.3.2.jenkins191} [Mantle] (Mantle-1.7.10-0.3.2b.jar) 
+	UE	nefsdecomod{1.0} [nefsdecomod] (NefsDecomod.jar) 
+	UC	TConstruct{1.7.10-1.8.8.build991} [Tinkers' Construct] (TConstruct-1.7.10-1.8.8.build991.jar) 
+	UC	witchery{0.24.1} [Witchery] (witchery_1.7.10_0.24.1.jar) 
+	Mantle Environment: DO NOT REPORT THIS CRASH! Unsupported mods in environment: bukkit
+	TConstruct Environment: Environment healthy.
+	Profiler Position: N/A (disabled)
+	Is Modded: Definitely; Server brand changed to 'thermos,cauldron,craftbukkit,mcpc,kcauldron,fml,forge'
+	Type: Dedicated Server (map_server.txt)
