@@ -108,12 +108,12 @@ world-settings:
     infinite-water-source: true
     entity-despawn-immediate: false
     worldgen-psychedelicraft-GeneratorGeneric: true
-    worldgen-teamod-BushWorldGenerator: true
+    worldgen-Thaumcraft-ThaumcraftWorldGenerator: true
     worldgen-TConstruct-SlimeIslandGen: true
+    worldgen-teamod-BushWorldGenerator: true
+    worldgen-TConstruct-TBaseWorldGenerator: true
     worldgen-witchery-WitcheryWorldGenerator: true
     worldgen-Forestry-WorldGenerator: true
-    worldgen-Thaumcraft-ThaumcraftWorldGenerator: true
-    worldgen-TConstruct-TBaseWorldGenerator: true
   max-players-visible: -1
   use-real-names: false
 protection:

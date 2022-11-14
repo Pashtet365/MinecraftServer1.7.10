@@ -1,3 +1,7 @@
 #List of Hidden Players
 top_gamer11:true
+vladyxa73:false
+venksto:false
+dimon14651:false
 vladclohara:true
+newton:false
